@@ -1,0 +1,290 @@
+/* Brandon Mok, Andrew Muggleton, JP Ramassini, Kevin Voltz */
+/* ISTE 240 */
+/* Group Project */
+/* Css */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Source Serif Pro', serif;
+	background-color: #efefef;
+}
+
+body {
+	min-height: 750px;
+	background-size: cover;
+	height: 100vh;
+	background-color: #efefef;
+}
+
+.topNav {
+	background-color: #faa21d !important;
+}
+
+ul {
+	background-color: #faa21d;
+}
+
+a {
+	text-decoration: none;
+	color: #2d0b3b;
+	background-color: #faa21d;
+}
+
+li {
+	color: #2d0b3b;
+	background-color: #faa21d;
+	display: inline-block;
+}
+
+img {
+	max-width: 50%;
+	max-height: 50%;
+}
+
+form {
+	margin-top: 75px;
+}
+footer > ul > li {
+	padding-left: 25px;
+}
+
+.topNav-home {
+	color: #2d0b3b;
+	background-color: #faa21d;
+}
+
+#headerLogo {
+	height: 49px;
+	width: 80px;
+	margin: 0;
+}
+
+/******* Classes *******/
+/* Top Nav CSS */
+.hamburger {
+	position: absolute;
+	background: none;
+	border: none;
+	right: 25px;
+	top: 50%;
+	transform: translate(0, -50%);
+	font-size: 2em;
+	height: 50px;
+	width: 50px;
+	display: none;
+}
+
+.topNav {
+	width: 100vw;
+	height: 3.5em;
+	position: fixed;
+	top: 0;
+	z-index: 1000;
+	background-color: #faa21d;
+	align-content: center;
+	align-items: center;
+	display: flex;
+}
+
+.topNav-ul {
+	list-style-type: none;
+	position: absolute;
+	right: 1em;
+}
+
+.topNav-ul-li {
+	display: inline-block;
+	color: #2d0b3b;
+	margin-right: 1.5em;
+	font-size: 1em;
+	font-weight: 700;
+}
+
+.topNav-ul-li > a:visited {
+	color: #2d0b3b;
+}
+
+.topNav-home {
+	position: absolute;
+	left: 1em;
+	font-size: 1.25em;
+	font-weight: 700;
+}
+
+.topNav-home > a:visited {
+	color: #2d0b3b;
+}
+
+.container {
+	margin-top: 75px;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+/* Headings */
+.heading {
+	margin: 0;
+	font-size: 38pt;
+}
+
+/* SubHeadings */
+.subHeading {
+	margin-top: 0.5em;
+	padding-bottom: 0.5em;
+	font-family: 'Asap', sans-serif;
+	font-size: 26pt;
+}
+
+/* form Center */
+.formCenter {
+	text-align: center;
+}
+
+/* Spacing for success stories */
+.seperate {
+	margin-top: 0.5em;
+	padding-bottom: 1em;
+	/*    line-height: 1.7;*/
+}
+
+.homePics {
+	width: 30%;
+	height: 20%;
+	float: left;
+	margin-right: 1.5em;
+	border: #2d0b3b 0.5em solid;
+	border-radius: 1.1em;
+	margin-bottom: 1.5em;
+}
+
+.divHomes {
+	display: inline-block;
+}
+
+/******* IDs *******/
+#form-container {
+	text-align: center;
+}
+
+#profilePic {
+	width: 30%;
+	height: 30%;
+	border: #2d0b3b 1em solid;
+	border-radius: 1.2em;
+	float: right;
+}
+
+/******* Other *******/
+fieldset {
+	margin-left: 40%;
+	margin-right: 40%;
+	margin-top: 1em;
+	padding-bottom: 1em;
+}
+
+input {
+	padding-top: 0.3em;
+	padding-bottom: 0.3em;
+}
+
+div .formCenter {
+	padding: 0.5em;
+}
+
+h2 {
+	margin-bottom: 1em;
+}
+
+p {
+	line-height: 1.7;
+}
+
+#hpTitle {
+	margin-top: 50px;
+}
+
+.testimonialWrapper {
+	margin-top: 75px;
+}
+
+/* Kevin Voltz */
+
+/* Basic styling for the h1 tags on the testimonials page*/
+.testimonialWrapper > h1 {
+	text-align: center;
+	margin-top: 1em;
+}
+
+/* Basic styling for the h2 tags on the testimonials page*/
+.testimonialWrapper > h2 {
+	text-align: center;
+	margin-top: 1em;
+}
+
+/* Basic styling for the p tags on the testimonials page */
+.textContainer > p {
+	font-size: 18px;
+	padding: 10px;
+}
+
+/* Styles the text on the testimonials page, making them stand out a little bit by changing the background color, centering them, and more */
+.textContainer {
+	border-radius: 25px;
+	background-color: #dcdc9a;
+	margin-left: 100px;
+	margin-right: 100px;
+	text-align: center;
+}
+
+/*** Media Queries ****/
+@media screen and (max-width: 1000px) {
+}
+
+@media screen and (min-width: 951px) {
+	.topNav-ul {
+		display: block !important;
+	}
+}
+
+@media screen and (max-width: 950px) {
+	.topNav-ul {
+		width: 100vw;
+		height: auto;
+		position: absolute;
+		top: 50px;
+		background-color: #faa21d;
+		display: none;
+	}
+
+	.topNav-ul-li {
+		width: 100%;
+		padding-left: 37.5px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+
+	.hamburger {
+		display: inline-block;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.textContainer {
+		margin: 0;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	#profilePic {
+		display: none;
+	}
+
+	.homePics {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 400px) {
+}
