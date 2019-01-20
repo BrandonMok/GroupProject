@@ -9,10 +9,3 @@ I created and utilized the majority of the css styling along with content layout
 
 Credit to: 
 Kevin Voltz, Andrew Muggleton, JP Ramassini
-
-
-Problem encountered: 
-One group member decided to drop out from college and didn't commit to doing their part until the night of.
-
-Solved: 
-Communicated directly and quickly during time to make sure project would be completed by the due date.
